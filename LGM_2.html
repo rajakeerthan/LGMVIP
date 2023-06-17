@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+TO DO LIST
+</title>
+<link rel="stylesheet" href="task1.css">
+<script src="task1.js">
+</script>
+</head>
+<body>
+<div class="k1">
+<h2 id="s1">My To Do List</h2>
+<input type="text" placeholder="Title..." style="color:blue;"  id="myInput"/>
+<button onclick="newElement()"  id="adding">Add</button>
+</div>
+
+<ul id="myUL">
+  <li>Hit the gym<button onclick="this.parentElement.style.display='none'">X</button></li>
+  <li class="checked">Pay bills<button onclick="this.parentElement.style.display='none'">X</button></li>
+  <li>Meet George<button onclick="this.parentElement.style.display='none'">X</button></li>
+  <li>Buy eggs<button onclick="this.parentElement.style.display='none'">X</button></li>
+  <li>Read a book<button onclick="this.parentElement.style.display='none'">X</button></li>
+  <li>Organize office<button onclick="this.parentElement.style.display='none'">X</button></li>
+</ul>
+<div id="sample">
+</div>
+</body>
+
+</html>

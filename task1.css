@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+	width: 300px;
+	align: center;
+margin-left: 450px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+list-style-type: none;
+}
+li{
+  background-color: darkturquoise;
+  padding:10px;
+  margin:10px;
+}
+
+
+
+.k1{
+width:300px;
+background-color: rgb(106,90,205);
+margin-top:100px;
+margin-left: 450px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+}
+#s1{
+color:white;
+}
+#adding{
+background-color: lightBlue;
+color:blue;
+border-radius:0px;
+width:50px;
+margin-left:0px;
+}
