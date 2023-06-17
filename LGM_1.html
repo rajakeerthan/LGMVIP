@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <style>
+            .cls1{
+                    padding: 10px;
+                    margin:300px 400px ;
+                    align-content: center;
+                    background-color:Black;
+                    width: fit-content;
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    grid-template-columns: 2fr 2fr 2fr 1fr;
+                    gap: 5px;
+                    border-radius: 10px;
+            }
+            button{
+                font-style: unset;
+                color:white;
+                background-color: purple;
+                border-radius: 5px;
+                padding: 10px 40px;
+                margin-top:10px;
+                margin-bottom:10px;
+                font-size: medium;
+            }
+            .itemc{
+                grid-column: span 3;
+                background-color: White;
+                border-radius: 5px;
+                margin-top:10px;
+                margin-bottom:10px;
+                color:black;
+                padding-top:9px;
+                font-size: medium;
+                
+            }
+
+            .items{
+                width:30px;
+                
+            }
+        </style>
+        <script>
+            function read(k){
+                document.getElementById("res").innerHTML += k;
+            }
+            function clr(){
+                document.getElementById("res").innerHTML =""; 
+            }
+            function solve(){
+                let x=document.getElementById("res").innerHTML;
+               let y=eval(x);
+                   document.getElementById("res").innerHTML =y;
+                   
+               }
+            
+        </script>
+    </head>
+    <body>
+        <div class="cls1">
+            <div class="itemc" id="res"></div>
+            <div ><button onclick="clr()" value="c" style="padding: 10px 15px;  background-color:rgb(243, 5, 132) " >c</button></div>
+            <div class="item"><button onclick="read('1')" value="1">1</button></div>
+            <div class="item"><button onclick="read('2')" value="2">2</button></div>
+            <div class="item"><button onclick="read('3')" value="3">3</button></div>
+            <div class="items"><button value="/" style="padding: 10px 15px" onclick="read('/')">/</button></div>
+            <div class="item"><button onclick="read('4')" value="4">4</button></div>
+            <div class="item"><button onclick="read('5')" value="5">5</button></div>
+            <div class="item"><button onclick="read('6')" value="6">6</button></div>
+            <div class="items"><button value="-" style="padding: 10px 15px" onclick="read('-')">-</button></div>
+            <div class="item"><button value="7" onclick="read('7')">7</button></div>
+            <div class="item"><button value="8" onclick="read('8')">8</button></div>
+            <div class="item"><button value="9" onclick="read('9')">9</button></div>
+            <div class="items"><button value="+" style="padding: 10px 15px" onclick="read('+')">+</button></div>
+            <div class="item"><button value="." onclick="read('.')">.</button></div>
+            <div class="item"><button value="0" onclick="read('0')">0</button></div>
+            <div class="item"><button value="=" style=" background-color:rgb(243, 5, 132);" onclick="solve()">=</button></div>
+            <div class="items"><button value="*" style="padding: 10px 15px" onclick="read('*')">*</button></div>
+        </div>
+    </body>
+</html>
